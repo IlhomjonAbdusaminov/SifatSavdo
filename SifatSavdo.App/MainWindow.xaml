@@ -1,0 +1,77 @@
+﻿<Window
+        x:Class="SifatSavdo.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SifatSavdo.App"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+    
+        Title="Sifat Savdo" MinHeight="684" MinWidth="1200" MaxHeight="684" MaxWidth="1200" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Image
+            Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="4" Source="/SifatSavdo.App;Component/Images/HomePageBackground.jpg" Stretch="UniformToFill" >
+        </Image>
+
+        <Border 
+            Grid.Row="0" Grid.Column="0"
+           Margin="0">
+
+            <Rectangle Grid.Row="0" RadiusX="90" RadiusY="90" Margin="80,42,100,20">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/SifatSavdo.App;Component/Images/SifatSavdoIcon.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+        </Border>
+
+        <Label
+            Grid.Row="0" Grid.Column="0"
+            Grid.ColumnSpan="2" Content="Sifat Savdo"
+            FontSize="30" FontWeight="Bold" Margin="220 70 0 0"
+            Foreground="Snow"/> 
+
+        <Button
+            Grid.Row="2" Grid.Column="3" Margin="0 0 0 20"
+            Style="{StaticResource MaterialDesignRaisedAccentButton}"
+            Width="200" Height="50" Background="Snow" Foreground="Black"
+            ToolTip="Resource name: MaterialDesignRaisedAccentButton"
+            materialDesign:RippleAssist.Feedback="#DD000000">
+            Sign Up
+        </Button>
+
+        <Button
+            Grid.Row="2" Grid.Column="2" Margin="40 0 0 20"
+            Style="{StaticResource MaterialDesignRaisedAccentButton}"
+            Width="200" Height="50" Background="Snow" Foreground="Black"
+            ToolTip="Resource name: MaterialDesignRaisedAccentButton"
+            materialDesign:RippleAssist.Feedback="#DD000000">
+            Sign In
+        </Button>
+
+
+    </Grid>
+</Window>
