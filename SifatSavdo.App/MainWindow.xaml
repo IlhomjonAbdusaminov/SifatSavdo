@@ -15,7 +15,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
     
-        Title="Sifat Savdo" MinHeight="684" MinWidth="1200" MaxHeight="684" MaxWidth="1200" WindowStartupLocation="CenterScreen">
+        Title="Sifat Savdo" MinHeight="684" MinWidth="1170" MaxHeight="684" MaxWidth="1170" WindowStartupLocation="CenterScreen">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -49,28 +49,60 @@
         </Border>
 
         <Label
-            Grid.Row="0" Grid.Column="0"
+            Grid.Row="0" Grid.Column="0" 
             Grid.ColumnSpan="2" Content="Sifat Savdo"
-            FontSize="30" FontWeight="Bold" Margin="220 70 0 0"
-            Foreground="Snow"/> 
+            FontSize="30" FontWeight="Bold" Margin="220 70 190  40"
+            Foreground="Snow"/>
+
+        <Label  Grid.Row="0" Grid.Column="1" Content="|" FontSize="40" Margin="120 63 0 0" Foreground="Snow"/>
+
+        <Expander
+            Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="150 70 230 0"
+            HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
+            Header="Manzillarimiz">
+            <StackPanel
+                  Orientation="Vertical"
+                  TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                  Margin="5">
+                <TextBlock
+                    Text="Faol holatdagi filiallar manzillari"/>
+                <TextBlock
+                    Opacity=".68"
+                    Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
+                    2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
+                    3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
+                    TextWrapping="Wrap" />
+            </StackPanel>
+        </Expander>
+
 
         <Button
-            Grid.Row="2" Grid.Column="3" Margin="0 0 0 20"
+            Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="81 40 210 20"
             Style="{StaticResource MaterialDesignRaisedAccentButton}"
-            Width="200" Height="50" Background="Snow" Foreground="Black"
+            Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
             ToolTip="Resource name: MaterialDesignRaisedAccentButton"
-            materialDesign:RippleAssist.Feedback="#DD000000">
+            materialDesign:RippleAssist.Feedback="Snow">
             Sign Up
         </Button>
 
         <Button
-            Grid.Row="2" Grid.Column="2" Margin="40 0 0 20"
+            Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="152 40 152 20"
             Style="{StaticResource MaterialDesignRaisedAccentButton}"
-            Width="200" Height="50" Background="Snow" Foreground="Black"
+            Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
             ToolTip="Resource name: MaterialDesignRaisedAccentButton"
-            materialDesign:RippleAssist.Feedback="#DD000000">
+            materialDesign:RippleAssist.Feedback="Snow">
             Sign In
         </Button>
+
+        <Button
+            Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  Margin="210 40 81 20"
+            Style="{StaticResource MaterialDesignRaisedAccentButton}"
+            Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
+            ToolTip="Resource name: MaterialDesignRaisedAccentButton"
+            materialDesign:RippleAssist.Feedback="Snow">
+            Biz haqimizda
+        </Button>
+
 
 
     </Grid>
