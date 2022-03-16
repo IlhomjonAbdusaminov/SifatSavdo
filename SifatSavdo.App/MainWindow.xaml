@@ -16,131 +16,156 @@
         mc:Ignorable="d"
     
         Title="Sifat Savdo" MinHeight="684" MinWidth="1170" MaxHeight="684" MaxWidth="1170" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <TabControl
+        x:Name = "mainTabControl">
+        <TabItem Visibility="Collapsed">
+            <Grid>
 
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
 
-        <Image
-            Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="4" Source="/SifatSavdo.App;Component/Images/HomePageBackground.jpg" Stretch="UniformToFill" >
-        </Image>
+                <Image
+                    Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="4" Source="/SifatSavdo.App;Component/Images/HomePageBackground.jpg" Stretch="UniformToFill" >
+                </Image>
 
-        <Border 
-            Grid.Row="0" Grid.Column="0"
-           Margin="0">
+                <Border 
+                    Grid.Row="0" Grid.Column="0"
+                    Margin="0">
 
-            <Rectangle Grid.Row="0" RadiusX="90" RadiusY="90" Margin="80,42,100,20">
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="/SifatSavdo.App;Component/Images/SifatSavdoIcon.png"/>
-                </Rectangle.Fill>
-            </Rectangle>
+                    <Rectangle Grid.Row="0" RadiusX="90" RadiusY="90" Margin="80,42,100,20">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="/SifatSavdo.App;Component/Images/SifatSavdoIcon.png"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
 
-        </Border>
+                </Border>
 
-        <Label
-            Grid.Row="0" Grid.Column="0" 
-            Grid.ColumnSpan="2" Content="Sifat Savdo"
-            FontSize="30" FontWeight="Bold" Margin="220 70 190  40"
-            Foreground="Snow"/>
+                <Label
+                    Grid.Row="0" Grid.Column="0" 
+                    Grid.ColumnSpan="2" Content="Sifat Savdo"
+                    FontSize="30" FontWeight="Bold" Margin="220 70 190  40"
+                    Foreground="Snow"/>
 
-        <Label
-              Grid.Row="0" Grid.Column="1" Content="|" FontSize="40" Margin="120 63 0 0" Foreground="Snow"/>
-
-        
-        <Expander
-            Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="150 70 230 285"
-            HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
-            Header="Manzillarimiz" FontSize="15">
-            <StackPanel
-                  Orientation="Vertical"
-                  TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
-                  Margin="5">
-                <TextBlock
-                    Text="Faol holatdagi filiallar manzillari"/>
-                <TextBlock
-                    Opacity=".68"
-                    Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
-                    2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
-                    3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
-                    TextWrapping="Wrap" />
-            </StackPanel>
-        </Expander>
-
-        <Expander
-            Grid.Row="0" Grid.Column="2"  Grid.RowSpan="3" Margin="70 70 0 135"
-            HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
-            Header="Biz bilan bog'lanish" FontSize="15">
-            <StackPanel
-                  Orientation="Vertical"
-                  TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
-                  Margin="5">
-                <TextBlock
-                    Text="Faol holatdagi filiallar manzillari"/>
-                <TextBlock
-                    Opacity=".68"
-                    Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
-                    2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
-                    3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
-                    TextWrapping="Wrap" />
-            </StackPanel>
-        </Expander>
-
-        <Expander
-            Grid.Row="0" Grid.Column="3"  Grid.RowSpan="3" Margin="15 70 65 135"
-            HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
-            Header="Qisqa yo'riqnoma" FontSize="15">
-            <StackPanel
-                  Orientation="Vertical"
-                  TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
-                  Margin="5">
-                <TextBlock
-                    Text="Faol holatdagi filiallar manzillari"/>
-                <TextBlock
-                    Opacity=".68"
-                    Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
-                    2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
-                    3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
-                    TextWrapping="Wrap" />
-            </StackPanel>
-        </Expander>
+                <Label
+                    Grid.Row="0" Grid.Column="1" Content="|" FontSize="40" Margin="120 63 0 0" Foreground="Snow"/>
 
 
+                <Expander
+                    Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="150 70 230 285"
+                    HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
+                    Header="Manzillarimiz" FontSize="15">
+                    <StackPanel
+                          Orientation="Vertical"
+                          TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                          Margin="5">
+                        <TextBlock
+                            Text="Faol holatdagi filiallar manzillari"/>
+                        <TextBlock
+                            Opacity=".68"
+                            Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
+                            2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
+                            3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Expander>
 
-        <Button
-            Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="81 40 210 20"
-            Style="{StaticResource MaterialDesignRaisedAccentButton}"
-            Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
-            materialDesign:RippleAssist.Feedback="Snow" Click="SignUpBtn">
-            Ro'yxatdan o'tish
-        </Button>
+                <Expander
+                    Grid.Row="0" Grid.Column="2"  Grid.RowSpan="3" Margin="70 70 0 135"
+                    HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
+                    Header="Biz bilan bog'lanish" FontSize="15">
+                    <StackPanel
+                        Orientation="Vertical"
+                        TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                        Margin="5">
+                        <TextBlock
+                            Text="Faol holatdagi filiallar manzillari"/>
+                        <TextBlock
+                            Opacity=".68"
+                            Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
+                            2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
+                            3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Expander>
 
-        <Button
-            Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="152 40 152 20"
-            Style="{StaticResource MaterialDesignRaisedAccentButton}"
-            Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
-            materialDesign:RippleAssist.Feedback="Snow" Click="SignInBtn">
-            Tizimga kirish
-        </Button>
+                <Expander
+                    Grid.Row="0" Grid.Column="3"  Grid.RowSpan="3" Margin="15 70 65 135"
+                    HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
+                    Header="Qisqa yo'riqnoma" FontSize="15">
+                    <StackPanel
+                        Orientation="Vertical"
+                        TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                        Margin="5">
+                        <TextBlock
+                            Text="Faol holatdagi filiallar manzillari"/>
+                        <TextBlock
+                            Opacity=".68"
+                            Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
+                            2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
+                            3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Expander>
 
-        <Button
-            Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  Margin="210 40 81 20"
-            Style="{StaticResource MaterialDesignRaisedAccentButton}"
-            Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
-            materialDesign:RippleAssist.Feedback="Snow" Click="AboutUsBtn">
-            Biz haqimizda
-        </Button>
 
-        <Frame x:Name="mainFrame" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="4"/>
-    </Grid>
+
+                <Button
+                    Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="81 40 210 20"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
+                    materialDesign:RippleAssist.Feedback="Snow" Click="SignUpBtn">
+                    Ro'yxatdan o'tish
+                </Button>
+
+                <Button
+                    Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="152 40 152 20"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
+                    materialDesign:RippleAssist.Feedback="Snow" Click="SignInBtn">
+                    Tizimga kirish
+                </Button>
+
+                <Button
+                    Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  Margin="210 40 81 20"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
+                    materialDesign:RippleAssist.Feedback="Snow" Click="AboutUsBtn">
+                    Biz haqimizda
+                </Button>
+            </Grid>
+        </TabItem>
+
+        <TabItem>
+            <Border Background="DodgerBlue">
+                <Grid>
+                    <ProgressBar
+                        x:Name="InProgress" Visibility="Hidden"
+                        Style="{StaticResource MaterialDesignCircularProgressBar}"
+                        Value="35" HorizontalAlignment="Center" VerticalAlignment="Top"
+                        IsIndeterminate="True" Margin="0 120 0 0"/>
+                    <StackPanel Width="300" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Label Content="Ro'yxatdan o'tish" HorizontalAlignment="Center" FontSize="20" Margin="0 0 0 25" Foreground="Snow" />
+                        <TextBox x:Name="textBoxName" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.Hint="Ism" Margin="0 0 0 10" Padding="5" />
+                        <TextBox x:Name="textBoxSurname" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.Hint="Familiya" Margin="0 0 0 10" Padding="5" />
+                        <TextBox x:Name="textBoxPhoneNumber" materialDesign:HintAssist.IsFloating="True" materialDesign:TextFieldAssist.PrefixText="+998" materialDesign:HintAssist.Hint="Telefon raqam" Margin="0 0 0 10" Padding="5" />
+                        <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.Hint="Login" Margin="0 0 0 10" Padding="5" />
+                        <TextBox x:Name="textBoxPassword" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.Hint="Parol" Margin="0 0 0 10" Padding="5" />
+                        <Button x:Name="signUpBtn" Click="TasdiqlashBtn" Content="Tasdiqlash" Margin="0 20 0 0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </TabItem>
+    </TabControl>
+
 </Window>

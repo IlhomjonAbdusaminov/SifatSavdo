@@ -1,5 +1,5 @@
 ﻿
-namespace SifatSavdo.Domain.Customs
+namespace SifatSavdo.Domain.Commons
 {
     public class Constants
     {

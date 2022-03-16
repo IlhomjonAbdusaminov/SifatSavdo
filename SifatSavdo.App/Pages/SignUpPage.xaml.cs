@@ -16,18 +16,19 @@ using System.Windows.Shapes;
 namespace SifatSavdo.App.Pages
 {
     /// <summary>
-    /// Interaction logic for SignIn.xaml
+    /// Interaction logic for SignUpPage.xaml
     /// </summary>
-    public partial class SignIn : Page
+    public partial class SignUpPage : Page
     {
-        public SignIn()
+        public SignUpPage()
         {
             InitializeComponent();
         }
 
-        private void loginBtn_Click(object sender, RoutedEventArgs e)
+        private void signUpBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
         }
     }
 }
