@@ -1,8 +1,8 @@
-﻿using SifatSavdo.App.Pages;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using SifatSavdo.Domain.Models.Entities;
 using System.Windows;
-using System.Windows.Controls;
+using System;
+using SifatSavdo.Data.Repositories;
+using System.Threading.Tasks;
 
 namespace SifatSavdo.App
 {
@@ -32,9 +32,21 @@ namespace SifatSavdo.App
             MessageBox.Show("Tayyor emas");
         }
 
-        private void TasdiqlashBtn(object sender, RoutedEventArgs e)
+        private void TasdiqlashBtnAsync(object sender, RoutedEventArgs e)
         {
-            
+            Client client = new Client()
+            {
+                FirstName = textBoxName.Text,
+                LastName = textBoxName.Text,
+                PhoneNumber = textBoxPhoneNumber.Text,
+                Login = textBoxLogin.Text,
+                Password = textBoxPassword.Text,
+                CreatedAt = DateTime.Now,
+            };
+
+            ClientRepository clientRepository = new ClientRepository();
+
+            clientRepository.Create(client);
 
             InProgress.Visibility = Visibility.Visible;
 

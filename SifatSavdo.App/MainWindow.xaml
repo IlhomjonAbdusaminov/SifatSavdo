@@ -161,7 +161,7 @@
                         <TextBox x:Name="textBoxPhoneNumber" materialDesign:HintAssist.IsFloating="True" materialDesign:TextFieldAssist.PrefixText="+998" materialDesign:HintAssist.Hint="Telefon raqam" Margin="0 0 0 10" Padding="5" />
                         <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.Hint="Login" Margin="0 0 0 10" Padding="5" />
                         <TextBox x:Name="textBoxPassword" materialDesign:HintAssist.IsFloating="True" materialDesign:HintAssist.Hint="Parol" Margin="0 0 0 10" Padding="5" />
-                        <Button x:Name="signUpBtn" Click="TasdiqlashBtn" Content="Tasdiqlash" Margin="0 20 0 0"/>
+                        <Button x:Name="signUpBtn" Click="TasdiqlashBtnAsync" Content="Tasdiqlash" Margin="0 20 0 0"/>
                     </StackPanel>
                 </Grid>
             </Border>

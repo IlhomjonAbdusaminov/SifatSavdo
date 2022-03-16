@@ -20,6 +20,15 @@
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.Design" Version="5.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SifatSavdo.Data\SifatSavdo.Data.csproj" />
+    <ProjectReference Include="..\SifatSavdo.Domain\SifatSavdo.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
