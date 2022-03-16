@@ -141,7 +141,6 @@
             Biz haqimizda
         </Button>
 
-
-
+        <Frame x:Name="mainFrame" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="4"/>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using SifatSavdo.App.Pages;
+using System.Windows;
 
 namespace SifatSavdo.App
 {
@@ -19,7 +20,7 @@ namespace SifatSavdo.App
 
         private void SignInBtn(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Tayyor emas");
+            mainFrame.Content = new SignIn();
         }
 
         private void AboutUsBtn(object sender, RoutedEventArgs e)

@@ -15,7 +15,6 @@
   <ItemGroup>
     <Folder Include="ViewDialogs\" />
     <Folder Include="UserControls\" />
-    <Folder Include="Pages\" />
     <Folder Include="Windows\" />
   </ItemGroup>
 
