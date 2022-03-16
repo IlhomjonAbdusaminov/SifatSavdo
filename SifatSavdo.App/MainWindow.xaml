@@ -54,12 +54,52 @@
             FontSize="30" FontWeight="Bold" Margin="220 70 190  40"
             Foreground="Snow"/>
 
-        <Label  Grid.Row="0" Grid.Column="1" Content="|" FontSize="40" Margin="120 63 0 0" Foreground="Snow"/>
+        <Label
+              Grid.Row="0" Grid.Column="1" Content="|" FontSize="40" Margin="120 63 0 0" Foreground="Snow"/>
+
+        
+        <Expander
+            Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="150 70 230 285"
+            HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
+            Header="Manzillarimiz" FontSize="15">
+            <StackPanel
+                  Orientation="Vertical"
+                  TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                  Margin="5">
+                <TextBlock
+                    Text="Faol holatdagi filiallar manzillari"/>
+                <TextBlock
+                    Opacity=".68"
+                    Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
+                    2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
+                    3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
+                    TextWrapping="Wrap" />
+            </StackPanel>
+        </Expander>
 
         <Expander
-            Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Margin="150 70 230 0"
+            Grid.Row="0" Grid.Column="2"  Grid.RowSpan="3" Margin="70 70 0 135"
             HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
-            Header="Manzillarimiz">
+            Header="Biz bilan bog'lanish" FontSize="15">
+            <StackPanel
+                  Orientation="Vertical"
+                  TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                  Margin="5">
+                <TextBlock
+                    Text="Faol holatdagi filiallar manzillari"/>
+                <TextBlock
+                    Opacity=".68"
+                    Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
+                    2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
+                    3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
+                    TextWrapping="Wrap" />
+            </StackPanel>
+        </Expander>
+
+        <Expander
+            Grid.Row="0" Grid.Column="3"  Grid.RowSpan="3" Margin="15 70 65 135"
+            HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
+            Header="Qisqa yo'riqnoma" FontSize="15">
             <StackPanel
                   Orientation="Vertical"
                   TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
@@ -76,30 +116,28 @@
         </Expander>
 
 
+
         <Button
             Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="81 40 210 20"
             Style="{StaticResource MaterialDesignRaisedAccentButton}"
             Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
-            ToolTip="Resource name: MaterialDesignRaisedAccentButton"
-            materialDesign:RippleAssist.Feedback="Snow">
-            Sign Up
+            materialDesign:RippleAssist.Feedback="Snow" Click="SignUpBtn">
+            Ro'yxatdan o'tish
         </Button>
 
         <Button
             Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="152 40 152 20"
             Style="{StaticResource MaterialDesignRaisedAccentButton}"
             Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
-            ToolTip="Resource name: MaterialDesignRaisedAccentButton"
-            materialDesign:RippleAssist.Feedback="Snow">
-            Sign In
+            materialDesign:RippleAssist.Feedback="Snow" Click="SignInBtn">
+            Tizimga kirish
         </Button>
 
         <Button
             Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"  Margin="210 40 81 20"
             Style="{StaticResource MaterialDesignRaisedAccentButton}"
             Width="280" Height="55" Background="#653FAE" Foreground="LightGoldenrodYellow"
-            ToolTip="Resource name: MaterialDesignRaisedAccentButton"
-            materialDesign:RippleAssist.Feedback="Snow">
+            materialDesign:RippleAssist.Feedback="Snow" Click="AboutUsBtn">
             Biz haqimizda
         </Button>
 

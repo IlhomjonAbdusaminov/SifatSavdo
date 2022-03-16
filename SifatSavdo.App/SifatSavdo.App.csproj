@@ -9,13 +9,14 @@
 
   <ItemGroup>
     <None Remove="Images\HomepageBackground.jpg" />
-    <None Remove="Images\Icon.png" />
     <None Remove="Images\SifatSavdoIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Windows\" />
+    <Folder Include="ViewDialogs\" />
+    <Folder Include="UserControls\" />
     <Folder Include="Pages\" />
+    <Folder Include="Windows\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,9 +25,6 @@
 
   <ItemGroup>
     <Resource Include="Images\HomepageBackground.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Images\Icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\SifatSavdoIcon.png">
