@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SifatSavdo.Service.Services
+﻿namespace SifatSavdo.Service.Services
 {
     public class ClientService
     {
