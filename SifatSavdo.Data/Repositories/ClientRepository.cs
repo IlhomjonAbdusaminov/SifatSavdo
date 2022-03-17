@@ -14,15 +14,12 @@ namespace SifatSavdo.Data.Repositories
     {
         internal SifatSavdoDbContext dbContext;
         internal DbSet<Client> dbSet;
-        public ClientRepository(SifatSavdoDbContext dbContext)
-        {
-            this.dbContext = dbContext;
-            this.dbSet = dbContext.Set<Client>();
-        }
         public ClientRepository()
         {
-
+            this.dbContext = dbContext = new SifatSavdoDbContext();
+            this.dbSet = dbContext.Set<Client>();
         }
+        
         public async void Create(Client client)
         {
             var entry = await dbSet.AddAsync(client);

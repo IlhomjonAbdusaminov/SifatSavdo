@@ -10,8 +10,8 @@ using SifatSavdo.Data.Contexts;
 namespace SifatSavdo.Data.Migrations
 {
     [DbContext(typeof(SifatSavdoDbContext))]
-    [Migration("20220316194627_firstmig")]
-    partial class firstmig
+    [Migration("20220317070417_firstMig")]
+    partial class firstMig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,10 +23,9 @@ namespace SifatSavdo.Data.Migrations
 
             modelBuilder.Entity("SifatSavdo.Domain.Models.Entities.Client", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -52,8 +51,8 @@ namespace SifatSavdo.Data.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("UpdatedBy")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("UpdatedBy")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 

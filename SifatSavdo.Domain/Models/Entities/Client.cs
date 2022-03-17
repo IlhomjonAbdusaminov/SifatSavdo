@@ -6,6 +6,7 @@ namespace SifatSavdo.Domain.Models.Entities
 {
     public class Client : IAuditable
     {
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -16,14 +17,12 @@ namespace SifatSavdo.Domain.Models.Entities
 
         public string Password { get; set; }
 
-        public int Id { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; } = null;
 
-        public DateTime? UpdatedAt { get; set; }
+        public Guid? UpdatedBy { get; set; } = null;
 
-        public int? UpdatedBy { get; set; }
-
-        public ItemState State { get; set; }
+        public ItemState State { get; set; } = ItemState.Created;
     }
 }
