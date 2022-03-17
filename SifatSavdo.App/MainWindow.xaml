@@ -62,7 +62,7 @@
 
 
                 <Expander
-                    Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="150 70 230 285"
+                    Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="150 70 230 235"
                     HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
                     Header="Manzillarimiz" FontSize="15">
                     <StackPanel
@@ -81,7 +81,7 @@
                 </Expander>
 
                 <Expander
-                    Grid.Row="0" Grid.Column="2"  Grid.RowSpan="3" Margin="70 70 0 135"
+                    Grid.Row="0" Grid.Column="2"  Grid.RowSpan="4" Margin="90 70 0 235"
                     HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
                     Header="Biz bilan bog'lanish" FontSize="15">
                     <StackPanel
@@ -89,18 +89,19 @@
                         TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
                         Margin="5">
                         <TextBlock
-                            Text="Faol holatdagi filiallar manzillari"/>
+                            Text="Ijtimoiy va aloqa markazlar"/>
                         <TextBlock
                             Opacity=".68"
-                            Text="1) Toshkent shahri, Chilonzor tumani Qatortol mahallasi. Mo'ljal Rayhon milliy taomlari ro'parasida.                 
-                            2) Toshkent shahri, Uchtepa tumani, Shirin mahallasi. Mo'ljal Oazis Savdo majmuasi yonida                                   
-                            3) Toshkent shahri, Shayhontoxur tumani, Olmazor ko'chasi. Mo'ljal Tashkent City "
+                            Text="                                                        
+                            Telefon raqamlar:                              +998949462220                              +998330179292                          
+                            Telegram manzil:                         @SifatSavdo_admin                              
+                            Instagram profil: @SifatSavdo.uz"
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </Expander>
 
                 <Expander
-                    Grid.Row="0" Grid.Column="3"  Grid.RowSpan="3" Margin="15 70 65 135"
+                    Grid.Row="0" Grid.Column="3"  Grid.RowSpan="4" Margin="15 70 65 235"
                     HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
                     Header="Qisqa yo'riqnoma" FontSize="15">
                     <StackPanel
