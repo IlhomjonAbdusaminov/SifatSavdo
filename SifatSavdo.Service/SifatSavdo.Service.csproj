@@ -8,4 +8,9 @@
     <Folder Include="Extensions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SifatSavdo.Data\SifatSavdo.Data.csproj" />
+    <ProjectReference Include="..\SifatSavdo.Domain\SifatSavdo.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

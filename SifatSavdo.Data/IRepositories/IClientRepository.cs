@@ -1,4 +1,5 @@
-﻿using SifatSavdo.Domain.Models.Entities;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using SifatSavdo.Domain.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace SifatSavdo.Data.IRepositories
 {
-    public interface IClientRepository
+    public interface IClientRepository : IGenericRepository<Client>
     {
-        void Create(Client client);
     }
 }
