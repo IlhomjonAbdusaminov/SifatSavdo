@@ -3,6 +3,8 @@ using System.Windows;
 using System;
 using SifatSavdo.Data.Repositories;
 using System.Threading.Tasks;
+using SifatSavdo.Service.Services;
+using SifatSavdo.Service.ViewModels;
 
 namespace SifatSavdo.App
 {
@@ -34,19 +36,18 @@ namespace SifatSavdo.App
 
         private void TasdiqlashBtnAsync(object sender, RoutedEventArgs e)
         {
-            Client client = new Client()
+            ClientService clientService = new ClientService();
+            
+            ClientViewModel model = new ClientViewModel()
             {
                 FirstName = textBoxName.Text,
-                LastName = textBoxName.Text,
+                LastName = textBoxSurname.Text,
                 PhoneNumber = textBoxPhoneNumber.Text,
                 Login = textBoxLogin.Text,
-                Password = textBoxPassword.Text,
-                CreatedAt = DateTime.Now,
+                Password = textBoxPassword.Text
             };
 
-            ClientRepository clientRepository = new ClientRepository();
-
-            clientRepository.Create(client);
+            clientService.CreateAsync(model);
 
             InProgress.Visibility = Visibility.Visible;
 

@@ -29,6 +29,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SifatSavdo.Data\SifatSavdo.Data.csproj" />
     <ProjectReference Include="..\SifatSavdo.Domain\SifatSavdo.Domain.csproj" />
+    <ProjectReference Include="..\SifatSavdo.Service\SifatSavdo.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

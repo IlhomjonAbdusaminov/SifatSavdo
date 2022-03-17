@@ -30,7 +30,7 @@ namespace SifatSavdo.Service.Services
                 Password = model.Password
             };
 
-            return _clientRepository.CreateAsync(client);
+            return model.Login == null ? null : _clientRepository.CreateAsync(client);
         }
 
         public Task<IEnumerable<Client>> GetAllAsync(int pageSize, int pageIndex, Expression<Func<Client, bool>> predicate = null)
