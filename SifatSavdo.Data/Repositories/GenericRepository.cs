@@ -42,7 +42,7 @@ namespace SifatSavdo.Data.Repositories
             return true;
         }
 
-        public async Task<IQueryable<T>> GetAllAsync(Expression<Func<T, bool>> expression = null)
+        public IQueryable<T> GetAllAsync(Expression<Func<T, bool>> expression = null)
         {
             return expression == null ? _dbSet : _dbSet.Where(expression);
         }

@@ -13,7 +13,7 @@ namespace SifatSavdo.Service.Interfaces
     {
         Task<Client> CreateAsync(ClientViewModel model);
         Task<Client> GetAsync(Expression<Func<Client, bool>> predicate);
-        Task<IEnumerable<Client>> GetAllAsync(int pageSize, int pageIndex, Expression<Func<Client, bool>> predicate = null);
+        IEnumerable<Client> GetAllAsync(int pageSize, int pageIndex, Expression<Func<Client, bool>> predicate = null);
         Task<Client> UpdateAsync(Client model);
         Task<Client> UpdateStatusAsync(long id, ItemState state);
     }

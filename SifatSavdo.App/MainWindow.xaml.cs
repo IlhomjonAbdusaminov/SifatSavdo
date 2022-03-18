@@ -36,22 +36,29 @@ namespace SifatSavdo.App
 
         private void TasdiqlashBtnAsync(object sender, RoutedEventArgs e)
         {
-            ClientService clientService = new ClientService();
-            
-            ClientViewModel model = new ClientViewModel()
+            if (textBoxName.Text != null && textBoxPassword != null)
             {
-                FirstName = textBoxName.Text,
-                LastName = textBoxSurname.Text,
-                PhoneNumber = textBoxPhoneNumber.Text,
-                Login = textBoxLogin.Text,
-                Password = textBoxPassword.Text
-            };
+                ClientService clientService = new ClientService();
+                ClientViewModel model = new ClientViewModel()
+                {
+                    FirstName = textBoxName.Text,
+                    LastName = textBoxSurname.Text,
+                    PhoneNumber = textBoxPhoneNumber.Text,
+                    Login = textBoxLogin.Text,
+                    Password = textBoxPassword.Text
+                };
 
-            clientService.CreateAsync(model);
+                clientService.CreateAsync(model).Wait();
 
-            InProgress.Visibility = Visibility.Visible;
+                InProgress.Visibility = Visibility.Visible;
 
-            mainTabControl.SelectedIndex = 0;
+                mainTabControl.SelectedIndex = 0;
+            }
+            else
+            {
+                MessageBox.Show("Null ma'lumotlar!");
+            }
+
         }
     }
 }

@@ -20,7 +20,8 @@ namespace SifatSavdo.Service.Services
         }
 
         public Task<Client> CreateAsync(ClientViewModel model)
-        {
+        {  
+
             Client client = new Client
             {
                 FirstName = model.FirstName,
@@ -33,7 +34,7 @@ namespace SifatSavdo.Service.Services
             return model.Login == null ? null : _clientRepository.CreateAsync(client);
         }
 
-        public Task<IEnumerable<Client>> GetAllAsync(int pageSize, int pageIndex, Expression<Func<Client, bool>> predicate = null)
+        public IEnumerable<Client> GetAllAsync(int pageSize, int pageIndex, Expression<Func<Client, bool>> predicate = null)
         {
             throw new NotImplementedException();
         }

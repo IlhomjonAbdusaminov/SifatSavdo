@@ -79,9 +79,9 @@
                             TextWrapping="Wrap" />
                     </StackPanel>
                 </Expander>
-
+ 
                 <Expander
-                    Grid.Row="0" Grid.Column="2"  Grid.RowSpan="4" Margin="90 70 0 235"
+                    Grid.Row="0" Grid.Column="2"  Grid.RowSpan="4" Margin="80 70 -10 235"
                     HorizontalAlignment="Stretch" Background="Transparent" Foreground="Snow"
                     Header="Biz bilan bog'lanish" FontSize="15">
                     <StackPanel
